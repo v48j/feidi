@@ -35,14 +35,27 @@
       <div class="text-item">
         <span>配送方式：包邮</span>
       </div>
-      <div class="text-item"> 
+      <div class="text-item">
         <span>发票类型：个人</span>
         <span>发票抬头：个人</span>
         <span>发票内容：明细</span>
       </div>
 
     </div>
-    <div class="all-price"></div>
+    <div class="all-price">
+      <div class="pricce-num">
+        <span>商品总额：￥2078</span>
+        <span>运　　费：+￥0.00</span>
+      </div>
+      <div class="jifen">
+        <span>积分：-￥20</span>
+      </div>
+      <div class="pay-num">
+        <span>实付款：
+          <span>￥4000.00</span>
+        </span>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -58,8 +71,10 @@ export default {
 .order-detail {
   background-color: #ddd;
   min-height: 100vh;
+  padding-bottom: 10vh;
 }
 .receive-peo {
+  padding: 10px;
   margin-top: 50px;
   background-color: #fff;
 }
@@ -71,7 +86,6 @@ export default {
     margin-bottom: 10px;
     padding: 10px;
     img {
-      width: 75px;
       height: 75px;
       border: 1px solid #aaa;
       margin-right: 10px;
@@ -103,14 +117,45 @@ export default {
   }
 }
 .detail-text {
+  padding: 10px;
   display: flex;
   flex-direction: column;
   background-color: #fff;
   font-size: 14px;
+  div {
+    display: flex;
+    flex-direction: column;
+    padding: 6px 0;
+  }
+  div + div {
+    border-top: 1px solid #ccc;
+  }
   span {
     line-height: 30px;
   }
 }
 .all-price {
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  div + div {
+    border-top: 1px solid #ccc;
+  }
+  .pay-num {
+    font-size: 16px;
+    display: flex;
+    align-items: flex-end;
+    > span > span {
+      color: #f50;
+    }
+  }
 }
 </style>

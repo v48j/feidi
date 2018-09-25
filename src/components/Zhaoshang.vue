@@ -26,11 +26,11 @@
           <label>联系人邮箱：<input type="text" placeholder="请输入信息"></label>
         </div>
         <div class="top-item">
-          <i class="iconfont icon-dingwei icon"></i>
+          <i class="iconfont icon-location icon"></i>
           <label>公司/个人地址：<input type="text" placeholder="请输入信息"></label>
         </div>
         <div class="top-item">
-          <i class="iconfont icon-trophy icon"></i>
+          <i class="iconfont icon-icon-- icon"></i>
           <label>公司/个人优势：<input type="text" placeholder="请输入信息"></label>
         </div>
         <div class="sub-btn">
@@ -50,7 +50,7 @@
         <span>电　话：18701521668</span>
       </div>
       <div class="bottom-item">
-        <i class="iconfont icon-dingwei icon"></i>
+        <i class="iconfont icon-location icon"></i>
         <span>地　址：北京市亦庄中和街14号</span>
       </div>
     </div>
@@ -58,65 +58,65 @@
 </template>
 
 <script>
-import TitleB from "./TitleB"
-import PublicNav from "./PublicNav"
+import TitleB from "./TitleB";
+import PublicNav from "./PublicNav";
 export default {
-  name: "zhaoshang",
-  components: { TitleB, PublicNav }
-}
+    name: "zhaoshang",
+    components: { TitleB, PublicNav }
+};
 </script>
 
 
 <style lang="scss">
 .zhaoshang {
-  background-color: #ddd;
-  height: 100vh;
-  .zhaoshang-title {
-    text-indent: 10px;
-  }
+    background-color: #ddd;
+    height: 100vh;
+    .zhaoshang-title {
+        text-indent: 10px;
+    }
 }
 .zhaoshang-top {
-  .sub-btn {
-    background-color: #fff;
-    display: flex;
-    justify-content: flex-end;
-    padding: 15px;
-    span {
-      background-color: rgb(255, 166, 0);
-      color: #fff;
-      padding: 2px 24px;
-      border-radius: 2px;
+    .sub-btn {
+        background-color: #fff;
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px;
+        span {
+            background-color: rgb(255, 166, 0);
+            color: #fff;
+            padding: 2px 24px;
+            border-radius: 2px;
+        }
     }
-  }
-  .top-item {
-    input {
-      border: none;
-      outline: none;
+    .top-item {
+        input {
+            border: none;
+            outline: none;
+        }
+        .icon {
+            color: rgb(48, 214, 123);
+            margin-right: 5px;
+        }
+        border-bottom: 1px solid #ccc;
+        background-color: #fff;
+        line-height: 50px;
+        padding: 0 10px;
+        font-size: 14px;
+        color: #999;
     }
-    .icon {
-      color: rgb(48, 214, 123);
-      margin-right: 5px;
-    }
-    border-bottom: 1px solid #ccc;
-    background-color: #fff;
-    line-height: 50px;
-    padding: 0 10px;
-    font-size: 14px;
-    color: #999;
-  }
 }
 .zhaoshang-bottom {
-  .bottom-item {
-    background-color: #fff;
-    line-height: 50px;
-    padding: 0 10px;
-    font-size: 14px;
-    color: #999;
-    .icon {
-      color: rgb(48, 214, 123);
-      margin-right: 5px;
+    .bottom-item {
+        background-color: #fff;
+        line-height: 50px;
+        padding: 0 10px;
+        font-size: 14px;
+        color: #999;
+        .icon {
+            color: rgb(48, 214, 123);
+            margin-right: 5px;
+        }
     }
-  }
 }
 </style>
 

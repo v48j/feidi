@@ -11,6 +11,14 @@ import Zhaoshang from "../components/Zhaoshang"
 import Introduction from "../components/Introduction"
 import Personal from "../components/Personal"
 import OrderDetail from "../components/OrderDetail"
+import BuyFeidi from "../components/BuyFeidi"
+import ShoppingCar from "../components/ShoppingCar"
+import ConfirmOrder from "../components/ConfirmOrder"
+import PayWay from "../components/PayWay"
+import PaySuccess from "../components/PaySuccess"
+import FaPiao from "../components/FaPiao"
+import SelAddress from "../components/SelAddress"
+
 
 Vue.use(VueRouter)
 
@@ -25,7 +33,14 @@ const routes = [
   { path: "/zhaoshang", component: Zhaoshang },
   { path: "/introduction", component: Introduction },
   { path: "/personal", component: Personal },
-  { path: "/orderdetail/:id", component: OrderDetail }
+  { path: "/orderdetail/:id", component: OrderDetail },
+  { path: "/buyfeidi", component: BuyFeidi },
+  { path: "/shoppingcar", component: ShoppingCar },
+  { path: "/confirmorder", component: ConfirmOrder },
+  { path: "/payway", component: PayWay },
+  { path: "/paysuccess", component: PaySuccess },
+  { path: "/fapiao", component: FaPiao },
+  { path: "/seladdress", component: SelAddress },
 ]
 
 const router = new VueRouter({

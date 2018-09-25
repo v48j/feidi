@@ -5,15 +5,15 @@
     <div class="pro-name">
       <p class="introduction-title">产品介绍</p>
       <div class="name-item">
-        <i class="iconfont icon-chanpin icon"></i>
+        <i class="iconfont icon-chanpin1 icon"></i>
         <span>产品名称：排痰器</span>
       </div>
       <div class="name-item">
-        <i class="iconfont icon-dingwei icon"></i>
+        <i class="iconfont icon-dingdan icon"></i>
         <span>商品名：郎弗罗@肺笛</span>
       </div>
       <div class="name-item">
-        <i class="iconfont icon-dingwei icon"></i>
+        <i class="iconfont icon-chanpin icon"></i>
         <span>可选型号：家庭治疗护理型</span>
       </div>
     </div>
@@ -25,7 +25,7 @@
           <span>烟民</span>
         </div>
         <div class="peo-item">
-          <i class="iconfont icon-2"></i>
+          <i class="iconfont icon-feiai"></i>
           <span>尘肺病</span>
         </div>
         <div class="peo-item">
@@ -80,95 +80,96 @@
 </template>
 
 <script>
-import TitleB from "./TitleB"
-import PublicNav from "./PublicNav"
+import TitleB from "./TitleB";
+import PublicNav from "./PublicNav";
 export default {
-  name: "introduction",
-  components: { TitleB, PublicNav }
-}
+    name: "introduction",
+    components: { TitleB, PublicNav }
+};
 </script>
 
 <style lang="scss">
 .introduction {
-  background-color: #ddd;
-  .introduction-title {
-    border-left: 2px solid rgb(48, 214, 123);
-    margin: 10px 0;
-    padding: 0 10px;
-    display: inline-block;
-    margin-left: 10px;
-    line-height: 20px;
-  }
+    background-color: #ddd;
+    .introduction-title {
+        border-left: 2px solid rgb(48, 214, 123);
+        margin: 10px 0;
+        padding: 0 10px;
+        display: inline-block;
+        margin-left: 10px;
+        line-height: 20px;
+    }
 }
 .pro-name {
-  .name-item {
-    background-color: #fff;
-    line-height: 50px;
-    padding: 0 10px;
-    font-size: 14px;
-    color: #777;
-    .icon {
-      color: rgb(48, 214, 123);
-      margin-right: 5px;
+    .name-item {
+        background-color: #fff;
+        line-height: 50px;
+        padding: 0 10px;
+        font-size: 14px;
+        color: #777;
+        .icon {
+            color: rgb(48, 214, 123);
+            margin-right: 5px;
+        }
     }
-  }
 }
 .pro-people {
-  .peo-box {
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    padding: 10px 20px;
-    color: #777;
-    .peo-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      i {
-        font-size: 30px;
-        color: rgb(48, 214, 123);
-      }
+    .peo-box {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 10px 20px;
+        color: #777;
+        .peo-item {
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            i {
+                font-size: 30px;
+                color: rgb(48, 214, 123);
+            }
+        }
     }
-  }
 }
 .pro-feature {
-  .feature-box {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    .feature-item {
-      color: #777;
-      display: flex;
-      flex-direction: column;
-      img {
-        width: 29vw;
-        height: 18vw;
-      }
+    .feature-box {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        .feature-item {
+            color: #777;
+            display: flex;
+            flex-direction: column;
+            img {
+                width: 29vw;
+                height: 18vw;
+            }
+        }
     }
-  }
 }
 .pro-use {
-  .use-text {
-    display: flex;
-    flex-direction: column;
-    color: #777;
-    padding: 0 10px;
-    span {
-      font-size: 14px;
-      line-height: 25px;
-      display: flex;
-      .dot {
-        color: rgb(48, 214, 123);
-      }
+    .use-text {
+        display: flex;
+        flex-direction: column;
+        color: #777;
+        padding: 0 10px;
+        span {
+            font-size: 14px;
+            line-height: 25px;
+            display: flex;
+            .dot {
+                color: rgb(48, 214, 123);
+            }
+        }
     }
-  }
 }
 .pro-principle {
-  .principle-text {
-    color: #777;
-    font-size: 14px;
-    margin: 0;
-    padding: 0 10px 20px;
-  }
+    .principle-text {
+        color: #777;
+        font-size: 14px;
+        margin: 0;
+        padding: 0 10px 20px;
+    }
 }
 </style>

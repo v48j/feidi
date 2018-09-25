@@ -20,7 +20,7 @@
         <div class="content">
           <img src="../assets/images/dingdan.jpg" alt="">
           <div class="buy-text">
-            <span class="buy-title">{{ele.name}}</span>
+            <span class="buy-title">{{ele.goodsName}}</span>
             <span class="buy-type">购买类型：{{ele.type}}</span>
             <div class="buy-num">
               <NumBtn/>
@@ -54,113 +54,112 @@
 </template>
 
 <script>
-import Footer from "./Footer"
-import TitleB from "./TitleB"
-import NumBtn from "./NumBtn"
+import Footer from "./Footer";
+import TitleB from "./TitleB";
+import NumBtn from "./NumBtn";
 export default {
-  name: "order",
-  components: { Footer, TitleB, NumBtn },
-  computed: {
-    getGoods() {
-      const nowtab = this.nowtab
-      const showGoods = this.$store.getters.getShowGoods(nowtab)
-      return showGoods
+    name: "order",
+    components: { Footer, TitleB, NumBtn },
+    computed: {
+        getGoods() {
+            const nowtab = this.nowtab;
+            const showGoods = this.$store.getters.getShowGoods(nowtab);
+            return showGoods;
+        }
+    },
+    data: () => ({
+        nowtab: "all"
+    }),
+    methods: {
+        changeTab(type) {
+            this.nowtab = type;
+        }
     }
-  },
-  data: () => ({
-    nowtab: "all"
-  }),
-  methods: {
-    changeTab(type) {
-      this.nowtab = type
-    }
-  }
-}
+};
 </script>
 
 <style lang="scss">
 .order {
-  background-color: #ddd;
-  padding-bottom: 10vh;
-  min-height: 90vh;
+    background-color: #ddd;
+    padding-bottom: 10vh;
+    min-height: 90vh;
 }
 .tab {
-  margin-top: 49px;
-  display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-  line-height: 50px;
-  padding: 0 10px;
-  margin-bottom: 10px;
-  .active {
-    color: rgb(35, 221, 144);
-    border-bottom: 2px solid rgb(35, 221, 144);
-  }
+    margin-top: 49px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    line-height: 50px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    .active {
+        color: rgb(35, 221, 144);
+        border-bottom: 2px solid rgb(35, 221, 144);
+    }
 }
 .order-list {
-  .order-item {
-    background-color: #fff;
-    padding: 10px;
-    margin-bottom: 10px;
-    .title {
-      .goods-state {
-        color: #f50;
-        font-size: 14px;
-      }
-      margin-bottom: 5px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .content {
-      display: flex;
+    .order-item {
+        background-color: #fff;
+        padding: 10px;
+        margin-bottom: 10px;
+        .title {
+            .goods-state {
+                color: #f50;
+                font-size: 14px;
+            }
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content {
+            display: flex;
 
-      img {
-        width: 75px;
-        height: 75px;
-        border: 1px solid #aaa;
-        margin-right: 10px;
-      }
-      .buy-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        .buy-title {
-          font-size: 14px;
-        }
-        .buy-type {
-          color: #aaa;
-          display: block;
-          font-size: 12px;
-        }
-        .buy-num {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-end;
+            img {
+                height: 75px;
+                border: 1px solid #aaa;
+                margin-right: 10px;
+            }
+            .buy-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 100%;
+                .buy-title {
+                    font-size: 14px;
+                }
+                .buy-type {
+                    color: #aaa;
+                    display: block;
+                    font-size: 12px;
+                }
+                .buy-num {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
 
-          .price {
-            color: #f50;
-            font-size: 18px;
-          }
+                    .price {
+                        color: #f50;
+                        font-size: 18px;
+                    }
+                }
+            }
         }
-      }
+        .shouhuo-btn {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 15px;
+            span {
+                border: 1px solid #ccc;
+                padding: 4px;
+                font-size: 14px;
+                margin-left: 5px;
+            }
+            .last-btn {
+                color: #f50;
+                border: 1px solid #f50;
+            }
+        }
     }
-    .shouhuo-btn {
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 15px;
-      span {
-        border: 1px solid #ccc;
-        padding: 4px;
-        font-size: 14px;
-        margin-left: 5px;
-      }
-      .last-btn {
-        color: #f50;
-        border: 1px solid #f50;
-      }
-    }
-  }
 }
 </style>
